@@ -95,7 +95,7 @@ def can_destroy_a_single_item
   movie.destroy
 end
 
-def can_destroy_all_items_at_once(title)
+def can_destroy_all_items_at_once
   10.times do |i|
     Movie.create(title: "Movie_#{i}")
   end
