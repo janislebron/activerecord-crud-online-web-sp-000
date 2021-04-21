@@ -46,7 +46,7 @@ def can_get_size_of_the_database
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  __
+  Movie.find(1).title
 end
 
 def can_find_by_multiple_attributes
@@ -54,7 +54,9 @@ def can_find_by_multiple_attributes
   # title == "Title"
   # release_date == 2000
   # director == "Me"
-  __
+  Movie.find_by(title: "Title")
+ Movie.find_by(release_date: "2000")
+ Movie.find_by(director: "Me")
 end
 
 def can_find_using_where_clause_and_be_sorted
